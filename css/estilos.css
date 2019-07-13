@@ -27,15 +27,20 @@
     }
     .salir{
         display: flex;
-        justify-content: flex-end; 
+        justify-content: space-between; 
         margin-right: 20px;  
+        color:white;
         
     }
     .tituloCentrado{
         display: flex;
-        justify-content: left;
-        color: white !important;
-        font-size: 5px;
+        justify-content: center;
+        color: white;
+       
+       
+    }
+    .etiquetaBlanca{
+        color: white;
     }
     .paginacionCentrada{
         display: flex;
@@ -64,5 +69,20 @@ video {
   min-width: 100%; 
   min-height: 100%;
   
+}
+.imagenDeFondo{
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+#container .table{
+  color:white;
+}
+#container p{
+  color:white;
 }
 

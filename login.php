@@ -35,7 +35,7 @@ if ($username==$usernameFromDB && $password==$passwordFromDB) {
 } else {
 	
 	echo '<script language="javascript">
-	alert("Error de autentificacion");
+	alert("Error de autenticacion");
 	window.location.href="index.php"</script>';
 	
 

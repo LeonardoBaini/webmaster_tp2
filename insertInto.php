@@ -5,6 +5,13 @@ $usuario=$_SESSION["usuario"];
 $monto=$_POST["monto"];
 $categoria=$_POST["categoria"];
 
+ if(!is_numeric($monto)) {
+ 	echo '<script language="javascript">
+	alert("Ingresó un valor no entero, reintente...");
+	window.location.href="formAlta.php"</script>';
+ 	
+ }
+
 $queryUsuario="select user_id from usuario where usuario='".$usuario."';";
 $queryCategoria="select categoria_id from categoria where descripcion='".$categoria."';";
 

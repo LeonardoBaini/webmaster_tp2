@@ -5,9 +5,6 @@ session_start();
 if (!isset($_SESSION["usuario"])) {
 	header("Location: index.php");
 	die();
-} else{
-	echo ('Bienvenido '.$_SESSION["usuario"]);
-	echo ('<br><a href="salir.php">Salir</a>');
 }
 
  ?>

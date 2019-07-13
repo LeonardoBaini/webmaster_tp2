@@ -1,11 +1,18 @@
 <?php
-require "validaUsuario.php";
 include "mysql.php";
-$CantidadMostrar=8;
+$CantidadMostrar=5;
 //Conexion  al servidor mysql
 
 $instanciaMysql=new miconexion();
 $resultSet=$instanciaMysql->dameResultSet("SELECT *  FROM `gastos`");
+
+
+$instanciaMysql3=new miconexion();
+$resultSet3=$instanciaMysql3->dameResultSet("SELECT sum(monto)  FROM `gastos`");
+$sumaGastos=$resultSet3->fetch_row();
+
+
+
 
                     // Validado  la variable GET
     $compag         =(int)(!isset($_GET['pag'])) ? 1 : $_GET['pag']; 
@@ -16,10 +23,11 @@ $resultSet=$instanciaMysql->dameResultSet("SELECT *  FROM `gastos`");
   	$TotalRegistro  =ceil($TotalReg/$CantidadMostrar);
 
     if(($compag +1)<=$TotalRegistro){
-        echo "<br><strong>Mostrando ".$CantidadMostrar*$compag." de ".$TotalReg."</strong>";
+        echo "<br><p><strong>Mostrando ".$CantidadMostrar*$compag." de ".$TotalReg."</strong></p>";
     }else{
-        echo "<br><strong>Fin de los resultados.</strong>";
+        echo "<br><p><strong>Fin de los resultados.</strong></p>";
     }
+    echo "<br><p>Llevas gastado <strong>".$sumaGastos[0]."</strong></p>";
     
    	
 	//Consulta SQL
@@ -38,6 +46,7 @@ $resultSet=$instanciaMysql->dameResultSet("SELECT *  FROM `gastos`");
 
     $instanciaMysql2=new miconexion();
     $resultSet2=$instanciaMysql2->dameResultSet($consultavistas);
+    
 
 	echo "<table class='table table-striped'><tr><th>Usuario</th><th>Descripcion</th><th>Monto</th><th>Fecha</th></tr>";
 
