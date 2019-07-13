@@ -1,5 +1,8 @@
+<?php
+require_once "validaUsuario.php";
+?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +17,7 @@
 </head>
 <body>
 	<?php
-  require "validaUsuario.php";
-  //Trae las configs del validador.
-  //session_start(); ya trae la sesion del require
-  // incluso el mensaje de bienvenida
   
-  //require "validaUsuario.php";
   include "mysql.php";
   $query='SELECT descripcion FROM `categoria`';
   $instanciaMysql=new miconexion();

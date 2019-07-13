@@ -1,6 +1,6 @@
 
 <?php 
-require "validaUsuario.php";
+require_once "validaUsuario.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">

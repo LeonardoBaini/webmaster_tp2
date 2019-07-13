@@ -22,12 +22,6 @@ $fila = mysqli_fetch_array($consulta);
 
 mysqli_close($instanciaConexion);
 
-/*
-echo $usernameFromDB;
-echo "<br>";
-echo $passwordFromDB;
-*/
-
 if ($username==$usernameFromDB && $password==$passwordFromDB) {
 	session_start();
 	$_SESSION["usuario"]=$username;

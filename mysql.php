@@ -62,7 +62,7 @@ $instanciaMysql=new miconexion();
 $instanciaConexion=$instanciaMysql->conexion();
 
 if (mysqli_query($instanciaConexion,$sql) === TRUE) {
-    console.log("New record created successfully");
+     // console.log("New record created successfully"); no se lo banca el host
     $resultado=true;
     
 } else {
