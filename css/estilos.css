@@ -52,10 +52,17 @@ h1{
 
 
 video {
-  position: absolute;
+ /* position: absolute;
   z-index: -1;
-  /* Vertical and Horizontal center*/
+  
   left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  
 }
 

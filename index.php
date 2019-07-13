@@ -9,15 +9,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
-<script type="text/javascript" src="css/javascript.js"></script>
+<script  src="css/javascript.js"></script>
 <title>Login</title>
 </head>
-
+ 
 <body>
+
 <div id="container">
-<video autoplay muted loop>
+    <video autoplay muted loop>
     <source src="img/tierra2.mp4" type="video/mp4">
-  </video>
+    </video>
+
 <h1>Bienvenido a Cash Control</h1>
 <div class="login-form">
     <form action="login.php" method="post">
@@ -37,6 +39,8 @@
     </form>
     
 </div>
+
 </div>
+<p>hola</p>
 </body>
 </html>                                		                            
