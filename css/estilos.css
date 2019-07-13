@@ -1,7 +1,6 @@
 
   body{
-    background-image: linear-gradient(#C7AAE8, white);
-    background-repeat: no-repeat; 
+   
   }
     .login-form {
     width: 340px;
@@ -34,11 +33,29 @@
     }
     .tituloCentrado{
         display: flex;
-        justify-content: center;
-        background-image: url("/img/fondo.jpg");
-
+        justify-content: left;
+        color: white !important;
+        font-size: 5px;
     }
     .paginacionCentrada{
         display: flex;
         justify-content: center;
     }
+
+    * {
+  margin: 0; padding: 0;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+
+
+video {
+  position: absolute;
+  z-index: -1;
+  /* Vertical and Horizontal center*/
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+

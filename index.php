@@ -9,16 +9,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
+<script type="text/javascript" src="css/javascript.js"></script>
 <title>Login</title>
 </head>
 
 <body>
-
-   
-
+<div id="container">
+<video autoplay muted loop>
+    <source src="img/tierra2.mp4" type="video/mp4">
+  </video>
+<h1>Bienvenido a Cash Control</h1>
 <div class="login-form">
     <form action="login.php" method="post">
-        <h2 class="text-center">Log in</h2>       
+        <h2 class="text-center">LOGIN</h2>       
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Username" name="username" required="required">
         </div>
@@ -28,12 +31,12 @@
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block">Log in</button>
         </div>
-        <div class="clearfix">
-            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
-            <a href="#" class="pull-right">Forgot Password?</a>
-        </div>        
+
+        <input type="button"  class="btn btn-primary btn-block" name="ayuda" value="Help" onclick="alert('usuario=lbaini pass=leo123')">
+          
     </form>
-    <p class="text-center"><a href="#">Create an Account</a></p>
+    
+</div>
 </div>
 </body>
 </html>                                		                            

@@ -47,12 +47,34 @@ $instanciaMysql=new miconexion();
 
 $instanciaConexion=$instanciaMysql->conexion();
 
-$consulta=mysqli_query($instanciaConexion,$query) or die(mysql_error());
+$consulta=mysqli_query($instanciaConexion,$query) or die(mysqli_error($instanciaConexion));
  
 mysqli_close($instanciaConexion);
 
 return $consulta;
 }
+
+
+public function insertar($sql){
+
+$instanciaMysql=new miconexion();
+
+$instanciaConexion=$instanciaMysql->conexion();
+
+if (mysqli_query($instanciaConexion,$sql) === TRUE) {
+    console.log("New record created successfully");
+    $resultado=true;
+    
+} else {
+    echo "Error: " . $sql . "<br>" . die(mysqli_error($instanciaConexion));
+    $resultado=false;
+}
+ 
+mysqli_close($instanciaConexion);
+return $resultado;
+}
+
+
 
 
 
