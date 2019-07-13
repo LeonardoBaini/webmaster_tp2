@@ -1,2 +1,2 @@
 # webmaster_tp2
-Es un abm de usuarios + control de gastos familiares
+Pretende ser un abm usuarios + control de gastos familiares si el tiempo alcanza =)
